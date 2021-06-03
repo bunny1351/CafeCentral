@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../stylesheet/cafe.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <title>Café Central</title>
+</head>
+
+<body>
+  <header id="home">
+    <nav>
+      <img src="../logo/Café  Central-logos_white.png" alt="Cafe Central" class="logo" />
+      <p id="clock" onload="clock()">hello</p>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#menu">MENU</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <img src="../logo/Café  Central-logos_white.png" alt="main logo" class="central" />
+    <h2 id="tagline"></h2>
+    <div class="button">
+      <button class="btn">Dine In</button>
+      <button class="btn">Order Online</button>
+    </div>
+  </header>
+
+  <span id="about"></span>
+  <h2 class="heading">About Us</h2>
+  <section>
+    <div class="container1">
+      <img src="../logo/outline_timeline_black_48dp.png" alt="location" />
+      <hr />
+      <h3>History</h3>
+      <br />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+        eaque sapiente repellendus deserunt tenetur sed alias tempore
+        repellat, odit totam laboriosam et inventore, esse enim, porro quos a
+        nam magnam?
+      </p>
+    </div>
+    <div class="container1">
+      <img src="../logo/outline_location_on_black_24dp.png" alt="location" />
+      <hr />
+      <h3>Location</h3>
+      <br />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+        eaque sapiente repellendus deserunt tenetur sed alias tempore
+        repellat, odit totam laboriosam et inventore, esse enim, porro quos a
+        nam magnam?
+      </p>
+    </div>
+    <div class="container1">
+      <img src="../logo/outline_restaurant_menu_black_48dp.png" alt="location" />
+      <hr />
+      <h3>Speciality</h3>
+      <br />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+        eaque sapiente repellendus deserunt tenetur sed alias tempore
+        repellat, odit totam laboriosam et inventore, esse enim, porro quos a
+        nam magnam?
+      </p>
+    </div>
+  </section>
+
+  <span id="menu"></span>
+  <h2 class="heading">Menu</h2>
+  <table>
+    <tr colspan="3">
+      <th class="main">COFFEE</th>
+    </tr>
+    <tr>
+      <th>SR. NO.</th>
+      <th>ITEM</th>
+      <th>QTY.</th>
+      <th>RATE</th>
+    </tr>
+    <tr>
+      <td>01</td>
+      <td>AFFOGATO</td>
+      <td>01</td>
+      <td>$5</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td>AMERICANO</td>
+      <td>01</td>
+      <td>$4</td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td>CAFFÈ LATTE</td>
+      <td>01</td>
+      <td>$6</td>
+    </tr>
+    <tr>
+      <td>04</td>
+      <td>CAFFÈ MOCHA</td>
+      <td>01</td>
+      <td>$8</td>
+    </tr>
+    <tr>
+      <td>05</td>
+      <td>CAFÈ AU LAIT</td>
+      <td>01</td>
+      <td>$7</td>
+    </tr>
+    <tr colspan="3">
+      <th class="main">PASTRIES</th>
+    </tr>
+    <tr>
+      <th>SR. NO.</th>
+      <th>ITEM</th>
+      <th>QTY.</th>
+      <th>RATE</th>
+    </tr>
+    <tr>
+      <td>01</td>
+      <td>CROISSANT</td>
+      <td>01</td>
+      <td>$5</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td>PIE</td>
+      <td>01</td>
+      <td>$4</td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td>DANISH</td>
+      <td>01</td>
+      <td>$6</td>
+    </tr>
+    <tr>
+      <td>04</td>
+      <td>MACARON</td>
+      <td>01</td>
+      <td>$8</td>
+    </tr>
+    <tr>
+      <td>05</td>
+      <td>PRETZEL</td>
+      <td>01</td>
+      <td>$7</td>
+    </tr>
+  </table>
+
+  <span id="contact"></span>
+  <h2 class="heading">Contact Us</h2>
+  <form action="POST">
+    <label for="fname">First Name: </label>
+    <input type="text" name="fname" id="fname" placeholder="John" required />
+    <br /><br />
+    <label for="lname">Last Name: </label>
+    <input type="text" name="lname" id="lname" placeholder="Doe" />
+    <br /><br />
+    <label for="email">Email ID:</label>
+    <input type="email" name="email" id="email" placeholder="abc@xyz.com" required />
+    <br /><br />
+    <label for="phone">Phone No: </label>
+    <input type="tel" name="phone" id="phone" placeholder="123-4567-678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"
+      title="Ten digit valid phone no" required />
+    <br /><br />
+    <textarea name="Enter Your Views" id="txtar" cols="50" rows="10">
+Enter Your Views</textarea>
+    <br /><br />
+    <input type="submit" id="submit" value="Submit" />
+  </form>
+
+  <footer>
+  <p>Address: </p>
+  <Address>#1214, 3rd St. ABC, QRS, COD</Address>
+  <p>Contact: 764-5656-568</p>
+  </footer>
+
+ <a href="#home" class="sticky">To Top</a>
+  <script src="../js/clock.js"></script>
+  <script src="../js/tag.js"></script>
+</body>
+
+</html>

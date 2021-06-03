@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mate SC", serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  border-bottom: 2px solid #000;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  background: #000;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #fff;
+  z-index: 1;
+}
+
+nav .logo {
+  width: 120px;
+  height: auto;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+nav #clock {
+  color: #fff;
+  padding: 12px;
+  font-size: 20px;
+}
+
+nav ul {
+  float: left;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 6px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+nav ul li a:hover {
+  background: #fff;
+  color: #000;
+}
+
+.central {
+  position: relative;
+  top: 15%;
+  left: 27%;
+  width: 600px;
+}
+
+#tagline {
+  position: relative;
+  top: 20%;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+}
+
+.button {
+  position: relative;
+  top: 30%;
+  left: 40%;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 20px 10px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 4px 4px 6px #32CD32;
+          box-shadow: 4px 4px 6px #32CD32;
+}
+
+.heading {
+  text-align: center;
+  font-size: 35px;
+  text-decoration: underline;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 85vh;
+}
+
+section .container1 {
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 20px;
+  width: 25%;
+  margin: 30px;
+  padding: 30px;
+}
+
+section .container1 img {
+  margin-bottom: 20px;
+  height: 60px;
+}
+
+section .container1 h3 {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+section .container1 p {
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+
+table, tr, td, th {
+  border: 1px solid #000;
+  text-align: center;
+  padding: 10px;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+table {
+  width: 40%;
+  position: relative;
+  left: 30%;
+  background: -webkit-gradient(linear, left top, right top, from(#f15d5d), color-stop(white), to(#6666ec));
+  background: linear-gradient(to right, #f15d5d, white, #6666ec);
+}
+
+table .main {
+  font-size: 20px;
+}
+
+form {
+  width: 40%;
+  position: relative;
+  left: 30%;
+  border: 1px solid #000;
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f09b56), color-stop(white), to(#54a544));
+  background: linear-gradient(to bottom, #f09b56, white, #54a544);
+}
+
+form input {
+  padding: 10px;
+  font-size: 15px;
+  width: 300px;
+}
+
+form label {
+  margin-right: 7px;
+}
+
+form #submit {
+  background: #00ff2a;
+  width: 100px;
+}
+
+footer {
+  margin: 20px 0;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  letter-spacing: 5px;
+  border: 1px double #fff;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: rgba(72, 209, 44, 0.397);
+  width: 5%;
+  padding: 10px;
+  z-index: 1;
+  text-decoration: none;
+  color: #000;
+}
+
+.sticky:hover {
+  background-color: rgba(72, 209, 44, 0.918);
+}
+/*# sourceMappingURL=cafe.css.map */
