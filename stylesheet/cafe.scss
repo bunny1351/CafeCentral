@@ -1,17 +1,5 @@
 @import "base";
-$headerht: 100vh;
-$navht: 50px;
-$navcolor: #000;
-$linkcolor: #fff;
-$logowidth: 120px;
-$logomargin: 20px;
-$lipadding: 10px 15px;
-$centralwidth: 600px;
-$tagfont: 40px;
-$btnmargin: 10px 20px 10px 10px;
-$btnfsize: 20px;
-$sectionfont: 'Montserrat', sans-serif;
-
+@import "variable";
 
 header{
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/background.jpg");
