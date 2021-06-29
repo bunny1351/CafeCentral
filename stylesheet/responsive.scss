@@ -1,4 +1,209 @@
-@media only screen and (min-width: 768px){
-@import 'base';
-
-}
+@media only screen and (max-width: 480px){
+    @import "base";
+    @import "variable";
+    header{
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/background.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: $headerht;
+       background-repeat:no-repeat;
+        overflow: hidden;
+        border-bottom: 2px solid $navcolor;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: $navht;
+        background: $navcolor;
+        position: fixed;
+        top: 0;
+        border-bottom: 1px solid $linkcolor;
+        z-index: 1;
+    
+        .logo{
+            width: 100px;
+            height: auto;
+            margin-left: $logomargin;
+            cursor: pointer;
+        }
+    
+        #clock{
+            color: $linkcolor;
+            padding: 12px;
+            font-size: 15px;
+        }
+    
+        ul{
+            float: left;
+            margin-right: $logomargin;
+    
+            li{
+                display: none;
+                padding: $lipadding;
+                margin: 6px;
+    
+                a{
+                    text-decoration: none;
+                    color: $linkcolor;
+                    padding: 10px;
+                    transition: 0.7s;
+                    border: 1px solid transparent;
+                    border-radius: 10px;
+                }
+    
+                a:hover{
+                    background: $linkcolor;
+                    color: $navcolor;
+                }
+            }
+        }
+    }
+    
+    .central{
+        position: relative;
+        top: 15%;
+        left: 23%;
+        width:300px;
+    }
+    
+    #tagline{
+        position: relative;
+        top: 20%;
+        text-align: center;
+        color: $linkcolor;
+        font-size: 32px;
+    }
+    
+    .button{
+        position: relative;
+        top: 30%;
+        left: 32%;
+    }
+    
+    .btn{
+        padding: 5px;
+        border-radius: 10px;
+        margin: $btnmargin;
+        font-size: 15px;
+        cursor: pointer;
+        border: 1px solid transparent;
+    }
+    
+    .btn:hover{
+        box-shadow: 4px 4px 6px #32CD32;
+    }
+    
+    .heading{
+        text-align: center;
+        font-size: 35px;
+        text-decoration: underline;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    section{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 85vh;
+    
+        .container1{
+            text-align: center;
+            border: 2px solid $navcolor;
+            border-radius: 20px;
+            width: 25%;
+            margin: 30px;
+            padding: 30px;
+    
+            img{
+                margin-bottom: 20px;
+                height: 60px;
+            }
+    
+            h3{
+                font-size: 25px;
+                margin-top: 20px;
+            }
+    
+            p{
+                font-family: $sectionfont;
+                text-align: justify;
+            }
+        }
+    }
+    table, tr, td, th{
+        border: 1px solid $navcolor;
+        text-align: center;
+        padding: 10px;
+        border-collapse: collapse;
+        font-size: 15px;
+    }
+    table{
+        width: 40%;
+        position: relative;
+        left: 30%;
+        background: linear-gradient(to right, rgb(241, 93, 93), rgb(255,255,255), rgb(102, 102, 236));
+    
+        .main{
+            font-size: 20px;
+        }
+    }
+    
+    form{
+        width: 40%;
+        position: relative;
+        left: 30%;
+        border: 1px solid $navcolor;
+        padding: 30px;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 30px;
+        background: linear-gradient(to bottom, rgb(240, 155, 86), rgb(255,255,255), rgb(84, 165, 68));
+    
+        input{
+            padding: 10px;
+            font-size: 15px;
+            width: 300px;
+        }
+    
+        label{
+            margin-right: 7px;
+        }
+    
+        #submit{
+            background: rgb(0, 255, 42);
+            width: 100px;
+        }
+    }
+    
+    footer{
+        margin: 20px 0;
+        background-color: $navcolor;
+        color: $linkcolor;
+        padding: 20px;
+        letter-spacing: 5px;
+        border: 1px double $linkcolor;
+    }
+    
+    .sticky{
+        position: sticky;
+        bottom: 0;
+        right: 0;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        background-color: rgba(72, 209, 44, 0.397);
+        width: 5%;
+        padding: 10px;
+        z-index: 1;
+        text-decoration: none;
+        color: $navcolor;
+    }
+    
+    .sticky:hover{
+        background-color: rgba(72, 209, 44, 0.918);
+    }
+    
+    }

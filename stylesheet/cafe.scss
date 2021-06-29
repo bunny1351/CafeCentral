@@ -1,6 +1,6 @@
+@media only screen and (min-width: 480px){
 @import "base";
 @import "variable";
-
 header{
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/background.jpg");
     background-position: center;
@@ -203,4 +203,6 @@ footer{
 
 .sticky:hover{
     background-color: rgba(72, 209, 44, 0.918);
+}
+
 }
